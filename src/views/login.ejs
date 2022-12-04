@@ -1,17 +1,23 @@
-<%- include ("includes/head") %> 
+<%- include ("includes/head") %>
 
-<h1>Tela de login</h1>
+<div class="main">
+    <div class="container-form">
+        <p class="h3" style="font-family: unset">Tela de Login</p>
+        <form method="post" action="??????">
+            <div class="mb-6">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="mb-6">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="button-forms">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="button" onclick="window.location.href='register'" class="btn btn-primary">Registra-se</button>
+            </div>
+        </form>
+    </div>
+</div>
 
-<form method="post" action="??????">
-    <label for="n_User">User</label>
-    <input type="text" id="login_usuario" name="login_usuario">
-    <br>
-    <label for="n_Password"> Password </label>
-    <input type="text" id="login_password" name="login_password">
-    <br>
-    <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
-
-<a href="register">Registre-se</a>
-
-<%- include ("includes/footer") %> 
+<%- include ("includes/footer") %>
