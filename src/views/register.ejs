@@ -1,17 +1,21 @@
 <%- include ("includes/head") %> 
-
-<h1>Tela de Registro</h1>
-
-<form method="post" action="login">
-    <label for="n_User">User</label>
-    <input type="text" id="register_usuario" name="register_usuario">
-    <br>
-    <label for="n_Password"> Password </label>
-    <input type="text" id="register_password" name="register_password">
-    <br>
-    <button type="submit" class="btn btn-danger">Enviar</button>
-</form>
-
-
+<div class="main">
+    <div class="container-form">
+        <p class="h3">Tela de Registro</p>
+            <form method="post" action="login">
+                <div class="mb-6">
+                    <label for="n_User" class="form-label">User</label>
+                    <input type="text" id="register_usuario" name="register_usuario" class="form-control">
+                </div>
+                <div class="mb-6">
+                    <label for="n_Password" class="form-label"> Password </label>
+                    <input type="text" id="register_password" name="register_password" class="form-control">
+                </div>
+                <div class="button-forms">
+                    <button type="submit" class="btn btn-danger">Enviar</button>
+                </div>
+            </form>
+    </div>
+</div>
 
 <%- include ("includes/footer") %> 
